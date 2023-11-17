@@ -11,7 +11,7 @@ const httpServer = createServer(app);
 // socket.io 연결
 const io = new Server(httpServer, {
     cors: {
-        origin: 'http://localhost:3001',
+        origin: 'http://localhost:3000',
     },
 });
 // io 매개변수에 전달

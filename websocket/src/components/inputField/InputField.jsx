@@ -6,9 +6,7 @@ import { Button } from '@mui/base/Button';
 const InputField = ({ message, setMessage, sendMessage }) => {
     return (
         <div className="input-area">
-            <div className="plus-button">
-                <span>+</span>
-            </div>
+            <div className="plus-button">+</div>
             <form onSubmit={sendMessage} className="input-container">
                 <Input
                     placeholder="Type in here…"

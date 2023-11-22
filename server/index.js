@@ -14,6 +14,7 @@ const io = new Server(httpServer, {
         origin: 'http://localhost:3000',
     },
 });
+
 // io 매개변수에 전달
 require('./utils/io')(io);
 

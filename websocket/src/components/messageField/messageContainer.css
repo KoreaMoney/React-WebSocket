@@ -1,10 +1,8 @@
 .system-message-container {
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
-
 .system-message {
     background-color: #55667758;
     border-radius: 100px;
@@ -20,7 +18,7 @@
     gap: 5px;
 }
 .my-message {
-    background-color: rgb(179, 235, 179);
+    background-color: yellow;
     border-radius: 8px;
     padding: 8px;
     max-width: 200px;

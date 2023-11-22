@@ -39,7 +39,9 @@ const App = () => {
 
     return (
         <div className="App">
-            <MessageContainer messageList={messageList} user={userInfo} />
+            <div className="message">
+                <MessageContainer messageList={messageList} user={userInfo} />
+            </div>
             <InputField message={message} setMessage={setMessage} sendMessage={sendMessage} />
         </div>
     );

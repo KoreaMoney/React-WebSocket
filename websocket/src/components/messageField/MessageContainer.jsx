@@ -2,12 +2,12 @@ import React from 'react';
 import './messageContainer.css';
 import { Container } from '@mui/system';
 import dayjs from 'dayjs';
+import _ from 'lodash';
 
 const MessageContainer = ({ messageList, user }) => {
     const getFormattedDate = (messageDate) => {
         const currentDate = dayjs();
         const messageDateObject = dayjs(messageDate);
-
         if (messageDateObject.isSame(currentDate, 'day')) {
             return messageDateObject.format('오늘 HH:mm');
         } else if (messageDateObject.isSame(currentDate.subtract(1, 'day'), 'day')) {

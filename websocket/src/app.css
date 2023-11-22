@@ -7,3 +7,19 @@
     position: relative;
     border-radius: 12px;
 }
+.message {
+    height: 94%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.message::-webkit-scrollbar {
+    width: 6px;
+}
+.message::-webkit-scrollbar-thumb {
+    background: #8a8888;
+    border-radius: 25px;
+}
+.message::-webkit-scrollbar-track {
+    border-radius: 25px;
+    background-color: #c2c0c0;
+}

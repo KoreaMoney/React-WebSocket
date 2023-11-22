@@ -14,6 +14,10 @@ const chatSchema = new mongoose.Schema(
             name: String,
         },
         date: String,
+        room: {
+            type: mongoose.Schema.ObjectId,
+            ref: 'Room',
+        },
     },
     {
         timestamps: true,
